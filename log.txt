@@ -1,12 +1,46 @@
-hello world
+创建新的工程：
+1、创建文件夹
+2、进入文件夹：git init
+3、与远端工程联系起来：git remote add origin git@github.com:mobinsheng/git-test
+4、添加新文件：git add filename
+5、提交到本地库：git commit -m “comment”
+6、查看工程状态：git status
+7、丢弃本地的修改：git checkout filename
+8、查看修改的内容：git diff
+9、查看历史：git log
+10、版本之间切换：git reset --hard id
+11、查看命令记录：git reflog
+12、如果已经add文件了，那么可以使用下面命令撤销：git reset HEAD filename，然后再用：git checkout filename
+13、把本地推送到远程：
+第一次：git push -u origin master 
+其他：git push oringin master
+如果推送不了那么可能需要：git push -u origin +master
 
-test git
 
-branch
+已经存在的工程：
+1、克隆：git clone https://github.com/mobinsheng/git-test
+2、修改提交：git add filename
+3、提交：git commit -m ”comment“
+4、推送到远程库：git push oringin master
+5、拉取远程最新代码：git pull
+6、请注意：在拉远程最新代码之前，需要把本地的代码commit了
+7、拉取代码之后可能会出现冲突：那么需要手动合并代码，再次commit，然后push
+8、删除文件：rm filename，git rm filename ，git commit
+9、如果删除了文件但是尚未commit，那么还可以使用 git checkout filenamelaos恢复删除文件
+10、如果本地已经commit了，那么可以使用 git reset  HEAD id 来恢复
 
+分支管理：
+1、创建分支：git branch dev
+2、查看分支：git branch
+3、切换到分支：git checkout dev
+4、把分支推送到远端：git push origin dev
+5、拉取远端分支：git fetch --all ，然后使用git checkout切换分支，再使用git pull dev
+或者：git checkout -b dev origin/dev
+6、合并分支，先切换到 git checkout master，git merge dev
+7、删除分支：git branch -d dev
+8、合并之后需要推送到远端：git push origin master
+9、同时另外的工程需要在master中pull：git pull origin master
+10、查看远程分支：git branch -r
+11、删除远程分支：git branch -r -d origin/dev
 
-hahah~~~
-
-
-
-
+如果出现：error: 无法推送一些引用到，那么执行：git push origin HEAD:refs/for/master  
