@@ -15,6 +15,10 @@
 #include <linux/sched.h>
 // 内核头文件。含有一些内核常用函数的原形定义。
 #include <linux/kernel.h>
+#include <linux/kernel.h>
+#include <linux/kernel.h>
+#include <linux/kernel.h>
+#include <linux/kernel.h>
 
 //// 将指定地址(addr)处的一块内存清零。嵌入汇编程序宏。
 // 输入：eax = 0，ecx = 数据块大小BLOCK_SIZE/4，edi = addr。
