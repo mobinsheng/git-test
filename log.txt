@@ -42,3 +42,5 @@
 9、同时另外的工程需要在master中pull：git pull origin master
 10、查看远程分支：git branch -r
 11、删除远程分支：git branch -r -d origin/dev
+
+如果出现：error: 无法推送一些引用到，那么执行：git push origin HEAD:refs/for/master  
