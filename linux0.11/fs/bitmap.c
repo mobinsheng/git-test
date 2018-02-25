@@ -1,8 +1,11 @@
 /* passed
  *  linux/fs/bitmap.c
  *
+ 
+ 
  *  (C) 1991  Linus Torvalds
  */
+#include <set_seg.h>
 #include <set_seg.h>
 
 /* bitmap.c 程序含有处理i 节点和磁盘块位图的代码 */
