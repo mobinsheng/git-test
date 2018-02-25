@@ -1,8 +1,6 @@
 /* passed
  *  linux/fs/bitmap.c
  *
- 
- 
  *  (C) 1991  Linus Torvalds
  */
 #include <set_seg.h>
