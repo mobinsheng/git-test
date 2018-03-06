@@ -50,3 +50,11 @@
 1、有一些项目clone之后还要更新子模块，那么按照下面的步骤进行处理：
 2、git submodule init
 3、git submodule update
+
+假如有一个分支（假设叫做evelop）已经被你，修改的面目全非，但是你暂时还不能push develop上（因为还没有完全测试），而且你要创建另一个分支feature（基于develop）去存放你的代码：
+1、在本地develop上 git add 、git commit，提交代码
+2、拉去远程的分支：git pull origin feature
+3、创建本地分支：git checkout -b feature origin/feature
+4、切换到feature分支：git checkout feature
+5、把本地的develop分支合并到feature：git merge develop
+6、推送到服务器：git push origin feature
