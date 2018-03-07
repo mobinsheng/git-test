@@ -28,7 +28,7 @@
 7、拉取代码之后可能会出现冲突：那么需要手动合并代码，再次commit，然后push
 8、删除文件：rm filename，git rm filename ，git commit
 9、如果删除了文件但是尚未commit，那么还可以使用 git checkout filenamelaos恢复删除文件
-10、如果本地已经commit了，那么可以使用 git reset  HEAD id 来恢复
+10、如果本地已经commit了，那么可以使用 git reset  HEAD id 来恢复/git reset --hard commit_id
 
 分支管理：
 1、创建分支：git branch dev
