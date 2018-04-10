@@ -73,7 +73,7 @@
 	git checkout upstream
 	git remote add upstream https://github/group/project.git
 6、查看分支信息：
-	git remote -r
+	git remote -v
 	可以看到origin和myself的仓库关联，upstream和group的仓库关联：
 	origin  https://github/myself/project (fetch)
 	origin  https://github/myself/project (push)
